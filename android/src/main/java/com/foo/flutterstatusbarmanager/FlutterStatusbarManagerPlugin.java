@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowManager;
-import android.support.v4.view.ViewCompat;
+// import android.support.v4.view.ViewCompat;
 
 import java.util.Map;
 
@@ -136,7 +136,7 @@ public class FlutterStatusbarManagerPlugin implements MethodCallHandler {
             } else {
                 decorView.setOnApplyWindowInsetsListener(null);
             }
-            ViewCompat.requestApplyInsets(decorView);
+            // ViewCompat.requestApplyInsets(decorView);
             result.success(true);
         } else {
             Log.e("FlutterStatusbarManager", "FlutterStatusbarManager: Can not change status bar color in pre lollipop android versions.");
